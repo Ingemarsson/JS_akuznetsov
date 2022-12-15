@@ -14,4 +14,5 @@ Scenario("test register", ({ I, homePage, registerPage }) => {
   homePage.openRegistrationPage();
   registerPage.verifyRegisterPage();
   registerPage.fillRegisterForm(newUser);
+  registerPage.confirmRegister();
 });
