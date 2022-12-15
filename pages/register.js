@@ -18,6 +18,7 @@ module.exports = {
   verifyRegisterPage() {
     I.see(this.registerHeaderText);
   },
+
   fillRegisterForm(user) {
     I.fillField(this.firstNameInput, user.firstName);
     I.fillField(this.lastNameInput, user.lastName);
@@ -29,6 +30,7 @@ module.exports = {
     I.checkOption(this.agreeRegisterBtn);
     I.click(this.registerBtn);
   },
+  
   confirmRegister() {
     I.see(this.registerSuccess);
   },
